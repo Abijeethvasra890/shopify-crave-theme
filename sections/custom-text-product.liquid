@@ -1,0 +1,18 @@
+{{ 'custom-text-product.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Custom Text Product",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "rich_text_product",
+      "label": "Rich Text Product"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="custom-text-product">
+  <h2>This text is from Custom Section via Local Code</h2>
+</div>
