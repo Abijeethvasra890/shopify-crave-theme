@@ -73,11 +73,6 @@
           "type": "description",
           "settings": {
           }
-        },
-        "judge_me_reviews_preview_badge_rB94qi": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -89,8 +84,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "judge_me_reviews_preview_badge_rB94qi"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -106,6 +100,12 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 16
+      }
+    },
+    "product-text": {
+      "type": "custom-text-product",
+      "settings": {
+        "rich_text_product": ""
       }
     },
     "related-products": {
@@ -185,9 +185,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "product-text": {
-      "type": "custom-text-product"
     }
   },
   "order": [
