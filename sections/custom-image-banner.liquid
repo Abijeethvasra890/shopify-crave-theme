@@ -1,0 +1,16 @@
+{% schema %}
+{
+  "name": "Custom Image Banner",
+  "settings": [
+     {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="custom-image-banner">
+  <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="Banner Image" width="100%" height="auto">
+</div>

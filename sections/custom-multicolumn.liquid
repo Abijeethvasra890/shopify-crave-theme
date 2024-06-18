@@ -1,0 +1,38 @@
+{% schema %}
+{
+  "name": "Custom Multicolumn",
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "column_image",
+          "label": "Column Image"
+        },
+        {
+          "type": "text",
+          "id": "column_text",
+          "label": "Column Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Multicolumn",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="custom-multicolumn">
+  {% for block in section.blocks %}
+    <div class="column">
+      <p>{{ block.settings.column_text }}</p>
+      <img src="{{ block.settings.column_image | img_url: 'master' }}" alt="Column Image" width="100%" height="auto">
+    </div>
+  {% endfor %}
+</div>

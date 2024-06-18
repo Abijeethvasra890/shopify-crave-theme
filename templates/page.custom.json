@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom-image-banner": {
+      "type": "custom-image-banner",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/heroshop.jpg"
+      }
+    },
+    "custom-rich-text": {
+      "type": "custom-rich-text",
+      "settings": {
+        "rich_text": ""
+      }
+    },
+    "custom-image-with-text": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/vasrastore.jpg",
+        "text": "Vasra Store"
+      }
+    },
+    "custom-multicolumn": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_Ei3nGf": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify:\/\/shop_images\/s23red_bbbbc2eb-cca8-42c9-84f0-5085f152c3b3.jpg",
+            "column_text": "Samsung"
+          }
+        },
+        "column_3JjjfT": {
+          "type": "column",
+          "settings": {
+            "column_image": "shopify:\/\/shop_images\/15promax.jpg",
+            "column_text": "Apple"
+          }
+        }
+      },
+      "block_order": [
+        "column_Ei3nGf",
+        "column_3JjjfT"
+      ],
+      "settings": {
+      }
+    },
+    "custom-image-button-heading": {
+      "type": "custom-image-button-heading",
+      "settings": {
+        "section_image": "shopify:\/\/shop_images\/warranty.jpg",
+        "heading": "Warranty",
+        "button_url": "shopify:\/\/collections\/all",
+        "button_text": "Shop Now ->"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom-image-banner",
+    "custom-rich-text",
+    "custom-image-with-text",
+    "custom-multicolumn",
+    "custom-image-button-heading"
+  ]
+}

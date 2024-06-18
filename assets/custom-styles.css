@@ -1,0 +1,40 @@
+.custom-image-banner img, 
+.custom-image-with-text img, 
+.custom-multicolumn img, 
+.custom-image-button-heading img {
+  max-width: 80%;
+  height: 500px;
+}
+.custom-image-banner{
+  display: flex;
+  justify-content: center;
+}
+.custom-image-with-text{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-bottom:100px;
+}
+
+.custom-multicolumn {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-image-button-heading .button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.custom-image-button-heading  {
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+  margin-bottom: 200px;
+}
+
