@@ -185,10 +185,14 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "product-text": {
+      "type": "custom-text-product"
     }
   },
   "order": [
     "main",
+    "product-text",
     "related-products",
     "featured_collection_3MMaKp",
     "17182656415f06cbd8",
