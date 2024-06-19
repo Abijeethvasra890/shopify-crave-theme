@@ -123,11 +123,11 @@
                             <ul>
                               {% assign discount_found = false %}
                               {% for item in cart.items %}
+                                <strong>{{ item.title }}:</strong>
                                 {% if item.discounts.size > 0 %}
                                   {% assign discount_found = true %}
                                   {% for discount in item.discounts %}
                                     <li>
-                                      <strong>{{ product.title }}:</strong>
                                       <strong>{{ discount.title }}:</strong>
                                       {% if discount.amount %}
                                         -{{ discount.amount | money }}
