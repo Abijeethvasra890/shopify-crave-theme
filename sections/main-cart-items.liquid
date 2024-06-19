@@ -118,6 +118,25 @@
                           <strong class="cart-item__final-price product-option">
                             {{ item.final_price | money }}
                           </strong>
+                          <div class="cart-discounts">
+                            {% if cart.discounts %}
+                              <h2>Discounts Applied</h2>
+                              <ul>
+                                {% for discount in cart.discounts %}
+                                  <li>
+                                    <strong>{{ discount.title }}:</strong>
+                                    {% if discount.value_type == 'percentage' %}
+                                      {{ discount.value }}% off
+                                    {% elsif discount.value_type == 'fixed_amount' %}
+                                      -{{ discount.value | money }}
+                                    {% endif %}
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            {% else %}
+                              <p>No discounts applied.</p>
+                            {% endif %}
+                          </div>
                         </div>
                       {%- else -%}
                         <div class="product-option">
