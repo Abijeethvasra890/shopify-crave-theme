@@ -317,7 +317,7 @@
     </div>
     <!-- Country Selector in Footer -->
     <div class="footer-country-selector">
-      <pre>{{ shop | json }}</pre>
+      <pre>{{ shop.locale | json }}</pre>
       <label for="country-select-footer">Select your country/region:</label>
       <select id="country-select-footer" onchange="changeCountry(this)">
         {% for locale in shop.locales %}
