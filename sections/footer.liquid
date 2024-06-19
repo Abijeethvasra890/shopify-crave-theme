@@ -315,30 +315,6 @@
         {%- endif -%}
       </div>
     </div>
-    <!-- Country Selector in Footer -->
-    <div class="footer-country-selector">
-      <pre>{{ shop | json }}</pre>
-      <label for="country-select-footer">Select your country/region:</label>
-      <select id="country-select-footer" onchange="changeCountry(this)">
-        {% for locale in shop.locales %}
-          <option
-            value="{{ locale.url }}"
-            {% if locale.active %}
-              selected
-            {% endif %}
-          >
-            {{ locale.name }}
-          </option>
-        {% endfor %}
-      </select>
-    </div>
-
-    <script>
-      function changeCountry(select) {
-        var url = select.value;
-        window.location.href = url;
-      }
-    </script>
   </div>
 </footer>
 
