@@ -127,6 +127,7 @@
                                   {% assign discount_found = true %}
                                   {% for discount in item.discounts %}
                                     <li>
+                                      <strong>{{ discount.product }}:</strong>
                                       <strong>{{ discount.title }}:</strong>
                                       {% if discount.amount %}
                                         -{{ discount.amount | money }}
