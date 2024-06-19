@@ -1247,7 +1247,9 @@
       },
       "alternative_payment_method_banner": {
         "express_checkout": "الخروج السريع",
-        "or": "أو"
+        "or": "أو",
+        "or_check_out_another_way": "أو تحقق من طريقة أخرى",
+        "or_pay_with_credit_card": "أو الدفع ببطاقة الائتمان"
       },
       "deliverability": {
         "not_deliverable": {
@@ -1292,7 +1294,8 @@
       "subscriptions": {
         "recurring_totals_with_policies": {
           "first_cycles": {
-            "other": "أول %{count} دفعات %{total_price} لكل منها"
+            "other": "أول %{count} دفعات %{total_price} لكل منها",
+            "one": "الدفعة الأولى %{total_price}"
           },
           "following_cycles": "، ثم %{total_price} كل %{interval}"
         },
@@ -1315,7 +1318,8 @@
           "year": {
             "one": "سنة"
           }
-        }
+        },
+        "recurring_totals": "%{total_price} كل %{interval}"
       },
       "customer_payment_methods": {
         "page_title": "طرق الدفع",
@@ -1703,7 +1707,18 @@
         "page_title_no_name": "شكرًا لك!",
         "company_location_title": "موقع",
         "confirmed": "مؤكد",
-        "gift_card_title": "بطاقات الهدايا"
+        "gift_card_title": "بطاقات الهدايا",
+        "title": "شكرا لك على الشراء!",
+        "page_title": "شكرًا لك، %{display_name}!",
+        "company_tracking_number": "رقم تتبع %{company}:",
+        "estimated_arrival": "التاريخ المتوقع للوصول: ",
+        "estimated_delivery": "تقدير التسليم الحالي: ",
+        "re-order": "إعادة ترتيب نفس العناصر",
+        "thank_you_title": "تم تأكيد طلبك",
+        "thank_you_title_payment": "تم تأكيد الدفع الخاص بك",
+        "thank_you_title_payments_app_pending_default": "تتم معالجة دفعتك",
+        "thank_you_title_payments_app_pending_buyer_action_required": "تم استلام طلبك",
+        "thank_you_title_payments_app_failed_pending_payment": "لا يمكن معالجة دفعتك"
       },
       "localized_fields": {
         "additional_information": {
@@ -1908,11 +1923,23 @@
           "expand": "عرض المزيد",
           "processing": "يعالج…",
           "submit": "يُقدِّم"
-        }
+        },
+        "escape_confirmation": "لقد دفعت ثمن طلبك.",
+        "escape_action": "عرض تأكيد الطلب ›"
       },
       "processing": {
         "redirecting_page_title": "إعادة توجيه…",
-        "redirecting_title": "إعادة توجيه…"
+        "redirecting_title": "إعادة توجيه…",
+        "redirecting_notice": "انتظر بينما نقوم بإعادة توجيهك.",
+        "redirecting_to_bank": "إعادة التوجيه إلى {{bank}}",
+        "complete_your_purchase_title": "أكمل عملية الشراء",
+        "complete_your_purchase_title_error": "تصحيح معلومات الدفع الخاصة بك",
+        "continue_to_payment_gateway_button_label_error": "تحديث معلومات الدفع",
+        "your_order_has_been_received_title": "شكرا لطلبك",
+        "you_will_not_be_charged": "لن يتم تحصيل الرسوم منك بعد",
+        "wait": {
+          "short": "طلبك قيد المعالجة."
+        }
       },
       "payment_gateway": {
         "credit_card_label": "بطاقة إئتمان",
@@ -1923,7 +1950,9 @@
           "no_access": {
             "link": "تسجيل الدخول"
           }
-        }
+        },
+        "cash_on_delivery_label": "الدفع عند الاستلام (COD)",
+        "deferred_payment_label": "اختر طريقة الدفع لاحقا"
       },
       "vaulted": {
         "change_button": "يتغير"
@@ -1936,18 +1965,31 @@
           "shipping_address_title": "سافر على متن سفينة لِـ",
           "change_link_label": "يتغير",
           "purchase_order_number_title": "PO عدد",
-          "no_address": "(لا يوجد عنوان)"
-        }
+          "no_address": "(لا يوجد عنوان)",
+          "change_contact_method_link_label": "تغيير معلومات الاتصال",
+          "change_billing_address_link_label": "تغيير عنوان إرسال الفواتير",
+          "change_shipping_address_link_label": "تغيير عنوان الشحن",
+          "change_shipping_method_link_label": "تغيير طريقة الشحن",
+          "change_payment_method_link_label": "قم بتغيير آلية الدفع",
+          "change_delivery_method_link_label": "تغيير طريقة التسليم",
+          "due_after_order_reviewed_html": "مستحق بعد مراجعة الطلب",
+          "review_title_free_order": "قم بمراجعة وإكمال طلبك",
+          "payment_method_saved_company_location": "حفظ البطاقة لهذا الموقع"
+        },
+        "checkout_a_different_way": "الخروج بطريقة مختلفة",
+        "block_title": "قم بمراجعة معلوماتك"
       },
       "shop_policies": {
-        "legal_notice": "إشعار قانوني"
+        "legal_notice": "إشعار قانوني",
+        "purchase_options_policy": "سياسة خيارات الشراء"
       },
       "order_payment_collection": {
         "changes_summary": {
           "added": {
             "one": "تمت الإضافة"
           },
-          "removed": "إزالة"
+          "removed": "إزالة",
+          "return_line_item_removed": "تمت إزالة %{count} من العودة"
         },
         "pay_now": "ادفع الآن"
       },
@@ -1956,7 +1998,29 @@
         "custom_label": "نصيحة مخصصة",
         "add_tip": "أضف نصيحة",
         "update_tip": "تحديث النصيحة",
-        "no_tip_label": "لا أحد"
+        "no_tip_label": "لا أحد",
+        "presets_description": "حدد نسبة الإكرامية",
+        "message": "شكرا لك، نحن نقدر ذلك."
+      },
+      "failed_payment": {
+        "page_title": "لا يمكن معالجة الدفع",
+        "title": "لا يمكن معالجة الدفع",
+        "payment_not_processed_title": "لا يمكن معالجة دفعتك"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "أرسل لي الأخبار والعروض",
+        "accept_sms_checkbox_label": "أرسل لي رسالة نصية تحتوي على الأخبار والعروض"
+      },
+      "mor_policies": {
+        "privacy_policy": "سياسة خصوصية تاجر السجل"
+      },
+      "change_currency": {
+        "change_currency_link": "التغيير إلى %{currency_name}"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "شراء %{product_name}"
+        }
       }
     },
     "pagination": {
@@ -2847,7 +2911,8 @@
       "loading_form_accessibility_message": "تحميل نموذج العنوان",
       "loading_finished_accessibility_message": "تم تحميل نموذج العنوان",
       "save": "يحفظ",
-      "section_title_accessibility_label": "اضف عنوان"
+      "section_title_accessibility_label": "اضف عنوان",
+      "save_accessibility_label": "احفظ العنوان {{address}}"
     },
     "enable_javascript": "لعرض حسابك، قم بتمكين JavaScript في إعدادات المتصفح الخاص بك أو قم بتسجيل الدخول باستخدام متصفح آخر.",
     "navigation_and_structure": {
@@ -2943,7 +3008,11 @@
           "pay_now_accessibility_label": "ادفع الآن مقابل الطلب {{orderName}}",
           "title": "حالة السداد",
           "pending": {
-            "title": "استحقاق الدفع"
+            "title": "استحقاق الدفع",
+            "banner_due_today": "الدفع الخاص بك يستحق اليوم",
+            "title_with_date": "{{date}}",
+            "title_due_on_fulfillment": "الدفع مستحق عند الوفاء",
+            "description_overdue": "الدفع الخاص بك متأخر."
           }
         },
         "order_timeline": {
@@ -2953,7 +3022,9 @@
           "hide_events_accessibility_label": "إخفاء تفاصيل أمر المسودة"
         },
         "subtitle": "{{date}}",
-        "title": "طلب {{name}}"
+        "title": "طلب {{name}}",
+        "loading": "جارٍ تحميل تفاصيل الطلب",
+        "loading_finished_accessibility_message": "تم تحميل تفاصيل الطلب"
       },
       "payment_methods": {
         "payment_delete": {
@@ -3001,21 +3072,47 @@
         "multiple_tax_exemptions_and": "و",
         "tax_exemptions_modal_close": "يغلق",
         "taxes_none": "لا أحد",
-        "tax_exemption_not_applicable": "لا يوجد"
+        "tax_exemption_not_applicable": "لا يوجد",
+        "location_picker_accessibility_label": "اسم الموقع: {{locationName}}",
+        "deposit_percentage": "{{percentage}} إيداع",
+        "staff_and_permissions_title": "الموظفين والأذونات",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} المزيد",
+        "tax_exemptions_modal_button_accessibility_label": "عرض الكل الإعفاءات الضريبية"
       },
       "location_selection": {
         "selection_cancel_button": "يلغي",
-        "clear_search": "مسح البحث"
+        "clear_search": "مسح البحث",
+        "list_loading_accessibility_message": "جارٍ تحميل قائمة المواقع",
+        "list_loading_finished_accessibility_message": "تم تحميل قائمة المواقع",
+        "search": "ابحث عن موقع",
+        "title": "ما هو الموقع الذي تشتري له؟"
       },
       "orders": {
         "draft_order_list": {
           "hide_all": "أخف كل شيء",
           "show_all": "عرض الكل",
           "title": "قيد الانتظار",
-          "pending_orders_count_more_than_pagination_length": "{{count}} +"
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "hide_all_accessibility_label": "إخفاء جميع الطلبات قيد المراجعة",
+          "show_all_accessibility_label": "عرض جميع الطلبات قيد المراجعة",
+          "show_all_orders_in_review": "عرض جميع الطلبات قيد المراجعة",
+          "show_less_orders_in_review": "عرض طلبات أقل قيد المراجعة",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "ليس لديك أي أوامر معلقة",
+            "pending_orders": {
+              "one": "لديك {{count}} أمر معلق",
+              "other": "لديك {{count}} من الطلبات المعلقة"
+            }
+          }
         },
         "order_list_column_headers_location": "موقع",
-        "order_list_column_headers_contact": "اتصال"
+        "order_list_column_headers_contact": "اتصال",
+        "removed_company_contact_tooltip": "تمت إزالته من الشركة"
+      },
+      "addresses": {
+        "cancel_adding_billing_address_accessibility_label": "إلغاء إضافة عنوان إرسال الفواتير",
+        "cancel_adding_shipping_address_accessibility_label": "إلغاء إضافة عنوان الشحن",
+        "save_new_shipping_address_accessibility_label": "حفظ عنوان الشحن"
       }
     },
     "errors": {
@@ -3120,23 +3217,46 @@
         "preauthorized_payments": "المدفوعات المصرح بها مسبقا",
         "close_payment_modal": "يغلق",
         "close_payment_modal_accessibility_label": "إغلاق تفاصيل طريقة الدفع المشروطة",
-        "edit_payment_method_button": "يحرر"
+        "edit_payment_method_button": "يحرر",
+        "payment_method_not_found_error": "غير قادر على العثور على طريقة الدفع",
+        "payment_details_loading": "جارٍ تحميل تفاصيل طريقة الدفع",
+        "pre_authorized_payments": "المدفوعات المصرح بها مسبقا",
+        "invalid_payment_method": "طريقة الدفع غير صالحة",
+        "replace_payment_method": "استبدال طريقة الدفع"
       },
       "edit_payment_method": {
         "save_payment_method_button": "يحفظ",
         "cancel_edit_payment_method_button": "يلغي",
-        "billing_address_add_new": "اضف جديد"
+        "billing_address_add_new": "اضف جديد",
+        "payment_method_updated_toast": "تم تحديث طريقة الدفع"
       },
       "card_fields": {
         "card_number_label": "رقم البطاقة",
         "card_number_placeholder": "رقم البطاقة",
         "name_on_card_label": "الاسم على البطاقة",
-        "name_on_card_placeholder": "الاسم على البطاقة"
+        "name_on_card_placeholder": "الاسم على البطاقة",
+        "card_expiry_label": "تاريخ انتهاء الصلاحية (شهر \/ سنة)",
+        "card_expiry_placeholder": "تاريخ انتهاء الصلاحية (شهر \/ سنة)",
+        "card_start_label": "تاريخ الإصدار (شهر \/ سنة)",
+        "card_start_placeholder": "تاريخ الإصدار (شهر \/ سنة)",
+        "field_errors": {
+          "credit_card_number_invalid": "أدخل رقم بطاقة صالح",
+          "credit_card_expiry_invalid": "أدخل تاريخ انتهاء صالح للبطاقة"
+        }
       },
       "add_payment_method": {
         "billing_address": {
-          "add_billing_address_button": "اضف جديد"
-        }
+          "add_billing_address_button": "اضف جديد",
+          "add_billing_address_button_accessibility_label": "أضف عنوان إرسال الفواتير الجديد",
+          "missing_billing_address_error_message": "يرجى تحديد عنوان إرسال الفواتير",
+          "default_checkbox": "تعيين كطريقة الدفع الافتراضية"
+        },
+        "payment_method_added_confirmation": "تمت إضافة طريقة الدفع"
+      },
+      "payment_delete": {
+        "title": "حذف طريقة الدفع",
+        "payment_method_selector_no_alternative_payment": "لا توجد طريقة بديلة",
+        "loading_available_payment_methods_accessibility_label": "جارٍ تحميل طرق الدفع المتاحة"
       }
     },
     "payment_method_brands": {
