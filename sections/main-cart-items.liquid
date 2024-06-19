@@ -121,21 +121,21 @@
                           <div class="cart-discounts">
                             <h2>Discounts Applied</h2>
                             <ul>
-                              {% assign discount_found = false %}
+                              <!-- {% assign discount_found = false %} -->
                               <!-- {% for item in cart.items %} -->
                               <!-- <strong>{{ item.title }}:</strong> -->
                               <!--
                                 {% if item.discounts.size > 0 %}
                                 {% assign discount_found = true %}
                               -->
-                              {% for discount in item.discounts %}
-                                <li>
-                                  <strong>{{ discount.title }}:</strong>
-                                  {% if discount.amount %}
-                                    -{{ discount.amount | money }}
-                                  {% endif %}
-                                </li>
-                              {% endfor %}
+                              <!-- {% for discount in item.discounts %} -->
+                              <li>
+                                <strong>{{ item.discounts.title }}:</strong>
+                                {% if item.discounts.amount %}
+                                  -{{ item.discounts.amount | money }}
+                                {% endif %}
+                              </li>
+                              <!-- {% endfor %} -->
                               <!-- {% endif %} -->
                               <!-- {% endfor %} -->
 
