@@ -320,7 +320,7 @@
       <pre>{{ shop.locale | json }}</pre>
       <label for="country-select-footer">Select your country/region:</label>
       <select id="country-select-footer" onchange="changeCountry(this)">
-        {% for locale in shop.locales %}
+        {% for locale in shop.locale %}
           <option
             value="{{ locale.url }}"
             {% if locale.active %}
