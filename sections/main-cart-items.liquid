@@ -121,7 +121,7 @@
                           <div class="cart-discounts">
                             {% if cart.discounts %}
                               <h2>Discounts Applied</h2>
-
+                              {{ cart.discounts }}
                               <ul>
                                 {% for discount in cart.discounts %}
                                   <h2>{{ discount }}</h2>
