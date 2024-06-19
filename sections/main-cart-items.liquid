@@ -119,10 +119,11 @@
                             {{ item.final_price | money }}
                           </strong>
                           <div class="cart-discounts">
-                            {% if cart.discounts and cart.discounts.size > 0 %}
+                            {% if cart.discounts %}
                               <h2>Discounts Applied</h2>
                               <ul>
                                 {% for discount in cart.discounts %}
+                                  <h2>{{ discount }}</h2>
                                   <li>
                                     <strong>{{ discount.title }}:</strong>
                                     {% if discount.value_type == 'percentage' %}
