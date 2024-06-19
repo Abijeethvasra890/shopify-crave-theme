@@ -121,9 +121,10 @@
                           <div class="cart-discounts">
                             {% if cart.discounts %}
                               <h2>Discounts Applied</h2>
-                              <h2>{{ cart.discounts }}</h2>
+
                               <ul>
                                 {% for discount in cart.discounts %}
+                                  <h2>{{ discount }}</h2>
                                   <li>
                                     <strong>{{ discount.title }}:</strong>
                                     {% if discount.value_type == 'percentage' %}
