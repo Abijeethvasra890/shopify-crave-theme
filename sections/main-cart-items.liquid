@@ -120,16 +120,16 @@
                           </strong>
                           <div class="cart-discounts">
                             <h2>Discounts Applied</h2>
-                            <pre>{{ cart.item.discounts }}</pre>
                             <ul>
+                              {% assign discount_found = false %}
                               {% for item in cart.items %}
-                                <strong>{{ item.title }}:</strong>
                                 {% if item.discounts.size > 0 %}
+                                  {% assign discount_found = true %}
                                   {% for discount in item.discounts %}
                                     <li>
-                                      <strong>{{ item.title }}:</strong>
-                                      {% if item.amount %}
-                                        -{{ item.amount | money }}
+                                      <strong>{{ discount.title }}:</strong>
+                                      {% if discount.amount %}
+                                        -{{ discount.amount | money }}
                                       {% endif %}
                                     </li>
                                   {% endfor %}
