@@ -1585,7 +1585,69 @@
         "method": "طريقة الشحن",
         "summary": "شحن",
         "free": "حر",
-        "free_shipping_discount": "ًالشحن مجانا"
+        "free_shipping_discount": "ًالشحن مجانا",
+        "one_time": "الشحن لمرة واحدة",
+        "subscription": "شحن الإشتراك"
+      },
+      "pickup": {
+        "pickup": "يلتقط",
+        "pickup_location": "اختر موقعا",
+        "pickup_point": "نقطة الالتقاء"
+      },
+      "show_items": "عرض العناصر",
+      "show_order_summary": "عرض ملخص الطلب",
+      "hide_order_summary": "إخفاء ملخص الطلب",
+      "subtitle": "تم التأكيد {{date}}",
+      "subtotal": "المجموع الفرعي",
+      "summary_list_title_accessibility_label": "طلب بضاعة",
+      "summary_title": "ملخص الطلب",
+      "summary_totals_title_accessibility_label": "إجمالي الطلب",
+      "shop_order_tracking": {
+        "download_shop_to_track": "تنزيل متجر لتتبع الحزمة",
+        "track_order_with_shop": "تتبع الطلب مع المتجر",
+        "title_header": "مسح مع هاتفك",
+        "real_time_delivery_updates": "سيرسل لك المتجر تحديثات التسليم في الوقت الفعلي بمجرد شحن طلبك."
+      },
+      "edit_summary": {
+        "added": "تمت الإضافة",
+        "added_with_quantity": "تمت إضافة {{quantity}}",
+        "removed": "إزالة",
+        "removed_with_quantity": "تمت إزالة {{quantity}}",
+        "updated_at": "تم تحديث طلبك بتاريخ {{date}}",
+        "returned": "عاد",
+        "returned_with_quantities": "تم إرجاع {{delta}} من {{total}}",
+        "removed_with_quantities": "تمت إزالة {{delta}} من {{total}}",
+        "return_line_item_removed": "تمت إزالته من العودة",
+        "return_line_item_removed_with_quantities": "تمت إزالة {{delta}} من العودة"
+      },
+      "shop_pay": {
+        "order_completed_with": "اكتمل الطلب مع",
+        "learn_more": "يتعلم أكثر"
+      },
+      "taxes": "الضرائب",
+      "duties": "الواجبات",
+      "ok_duties_tooltip": "يتم شحن هذا الطلب من دولة أخرى، لذا تمت إضافة الرسوم الجمركية إلى إجمالي طلبك.",
+      "error_duties_tooltip": "يتم شحن هذا الطلب من دولة أخرى، لذلك قد يتم فرض رسوم وضرائب عند التسليم.",
+      "zero_duties_tooltip": "يتم شحن هذا الطلب من بلد آخر. لا يتم فرض رسوم على أوامر بهذه القيمة.",
+      "tip": "نصيحة",
+      "title": "طلب {{name}}",
+      "total": "المجموع",
+      "unit_price": "{{price}} \/ea",
+      "pagination": {
+        "load_more": "تحميل المزيد",
+        "load_more_accessibility_label": "تحميل المزيد من العناصر",
+        "loading_accessibility_label": "جارٍ تحميل العناصر"
+      },
+      "login_to_view_all_order_details": "قم بتسجيل الدخول لعرض كافة تفاصيل الطلب.",
+      "log_in": "تسجيل الدخول",
+      "logged_in_account_no_permission_to_order": "لقد قمت بتسجيل الدخول باسم {{email}} . هذا الحساب ليس لديه إذن لإدارة هذا الطلب.",
+      "log_in_to_a_different_account": "تسجيل الدخول إلى حساب مختلف",
+      "fees": {
+        "restocking_fee": "رسوم إعادة تخزين",
+        "return_shipping_fee": "عودة الشحن"
+      },
+      "vat_invoices": {
+        "title": "فواتير ضريبة القيمة المضافة"
       }
     },
     "ui_components": {
@@ -1655,6 +1717,68 @@
         "button": "تسجيل الخروج في كل مكان",
         "warning_message": "سيتم تسجيل خروجك على هذا الجهاز أيضًا."
       }
+    },
+    "addresses": {
+      "add_button": "اضف عنوان",
+      "add_button_text": "يضيف",
+      "add_button_accessibility_label": "اضف عنوان",
+      "back_button": "خلف",
+      "back_button_accessibility_label": "العودة إلى تعديل العنوان {{address}}",
+      "add_address_banner": "أضف عناوين لاستخدامها عند الخروج",
+      "no_addresses_banner": "لم تتم إضافة أي عناوين",
+      "address_deleted_notification": "تم حذف العنوان",
+      "cancel_adding_address_accessibility_label": "إلغاء إضافة العنوان",
+      "cancel_deletion_button": "يلغي",
+      "cancel_deletion_button_accessibility_label": "إلغاء حذف {{address}}",
+      "default_address": {
+        "title": "العنوان الافتراضي",
+        "title_accessibility_label": "العنوان الافتراضي: {{address}}"
+      },
+      "delete_button": "يمسح",
+      "delete_button_accessibility_label": "حذف {{address}}",
+      "delete_confirmation_button": "حذف العنوان",
+      "delete_confirmation_button_accessibility_label": "حذف {{address}}",
+      "delete_confirmation_message": "هل تريد حذف العنوان؟ لا تتأثر الطلبات الحالية.",
+      "delete_confirmation_title": "هل تريد حذف العنوان؟",
+      "delete_confirmation_description": "لا تتأثر الطلبات الحالية.",
+      "edit_button": "يحرر",
+      "edit_button_accessibility_label": "تعديل {{address}}",
+      "edit_section_accessibility_label": "تعديل {{address}}",
+      "edit_modal_title": {
+        "default": "تعديل العنوان",
+        "billing": "تعديل عنوان إرسال الفواتير",
+        "shipping": "تحرير عنوان الشحن"
+      },
+      "loading_accessibility_message": "عنوان تحميل",
+      "loading_addresses_accessibility_message": "جارٍ تحميل العناوين",
+      "loading_billing_accessibility_message": "جارٍ تحميل عنوان إرسال الفواتير",
+      "loading_finished_accessibility_message": "تم تحميل صفحة جديدة من العناوين",
+      "loading_shipping_accessibility_message": "جارٍ تحميل عنوان الشحن",
+      "pagination": {
+        "load_more": "تحميل المزيد",
+        "load_more_accessibility_label": "تحميل المزيد من العناوين"
+      },
+      "save_new_address_accessibility_label": "حفظ العنوان",
+      "title": "عناوين",
+      "billing_address_dropdown_placeholder": "عنوان وصول الفواتير"
+    },
+    "address_form": {
+      "attention": "انتباه",
+      "attention_company": "الشركة \/ الاهتمام",
+      "attention_help_text": "اسم الشخص أو القسم",
+      "auto_complete_close_accessibility_label": "إغلاق الاقتراحات",
+      "auto_complete_title": "اقتراحات",
+      "billing_address": "استخدم كعنوان إرسال الفواتير",
+      "cancel": "يلغي",
+      "cancel_accessibility_label": "إلغاء تعديل العنوان {{address}}",
+      "creation_success_notification": "تمت إضافة العنوان",
+      "default_address": "هذا هو عنواني الافتراضي",
+      "default_address_creation_success_notification": "تمت إضافة العنوان الافتراضي",
+      "default_address_update_success_notification": "تم تحديث العنوان الافتراضي",
+      "loading_add_form_accessibility_message": "تحميل نموذج العنوان الجديد",
+      "loading_edit_form_accessibility_message": "جارٍ تحميل نموذج عنوان التحرير",
+      "loading_form_accessibility_message": "تحميل نموذج العنوان",
+      "loading_finished_accessibility_message": "تم تحميل نموذج العنوان"
     }
   },
   "sections": {
@@ -1726,7 +1850,40 @@
     },
     "slideshow": {
       "load_slide": "تحميل الشريحة",
-      "previous_slideshow": "الشريحة السابقة"
+      "previous_slideshow": "الشريحة السابقة",
+      "next_slideshow": "الشريحة التالية",
+      "pause_slideshow": "إيقاف عرض الشرائح مؤقتًا",
+      "play_slideshow": "لعب عرض الشرائح",
+      "carousel": "دائري",
+      "slide": "الانزلاق"
+    },
+    "page": {
+      "title": "عنوان الصفحة"
+    },
+    "quick_order_list": {
+      "product_total": "المجموع الفرعي للمنتج",
+      "view_cart": "عرض العربة",
+      "each": "{{ money }} \/ea",
+      "product": "منتج",
+      "variant": "البديل",
+      "variant_total": "المجموع البديل",
+      "items_added": {
+        "one": "تمت إضافة عنصر {{ quantity }}",
+        "other": "تمت إضافة {{ quantity }} من العناصر"
+      },
+      "items_removed": {
+        "one": "تمت إزالة السلعة {{ quantity }}",
+        "other": "تمت إزالة {{ quantity }} من العناصر"
+      },
+      "product_variants": "متغيرات المنتج",
+      "total_items": "إجمالي العناصر",
+      "remove_all_single_item_confirmation": "هل تريد إزالة عنصر واحد من سلة التسوق الخاصة بك؟",
+      "remove_all_items_confirmation": "هل تريد إزالة كافة العناصر {{ quantity }} من سلة التسوق الخاصة بك؟",
+      "remove_all": "حذف الكل",
+      "cancel": "يلغي",
+      "min_error": "يحتوي هذا العنصر على الحد الأدنى من {{ min }}",
+      "max_error": "الحد الأقصى لهذا العنصر هو {{ max }}",
+      "step_error": "لا يمكنك إضافة هذا العنصر إلا بزيادات قدرها {{ step }}"
     }
   },
   "products": {
@@ -1795,7 +1952,11 @@
       "xr_button": "عرض في المساحة الخاصة بك",
       "xr_button_label": "عرض في المساحة الخاصة بك، وتحميل العنصر في نافذة الواقع المعزز",
       "include_taxes": "شامل الضريبة.",
-      "shipping_policy_html": "يتم احتساب <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">الشحن<\/a> عند الخروج."
+      "shipping_policy_html": "يتم احتساب <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">الشحن<\/a> عند الخروج.",
+      "add_to_cart": "أضف إلى السلة",
+      "choose_options": "اختر الخيارات",
+      "choose_product_options": "تحديد خيارات لـ {{ product_name }}",
+      "description": "وصف"
     },
     "modal": {
       "label": "معرض الوسائط"
@@ -1872,5 +2033,110 @@
         "email": "بريد إلكتروني"
       }
     }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "أدخل المتجر باستخدام كلمة المرور:",
+      "login_password_button": "أدخل باستخدام كلمة المرور",
+      "login_form_password_label": "كلمة المرور",
+      "login_form_password_placeholder": "كلمة السر خاصتك",
+      "login_form_error": "كلمة مرور خاطئة!",
+      "login_form_submit": "يدخل",
+      "admin_link_html": "هل أنت مالك المتجر؟ <a href=\"\/admin\" class=\"link underlined-link\">تسجيل الدخول هنا<\/a>",
+      "powered_by_shopify_html": "سيتم تشغيل هذا المتجر بواسطة {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "أنشرها على الفيسبوك",
+        "share_on_twitter": "شارك على X",
+        "share_on_pinterest": "دبوس على بينتريست"
+      },
+      "links": {
+        "twitter": "اكس (تويتر)",
+        "facebook": "فيسبوك",
+        "pinterest": "بينتريست",
+        "instagram": "انستغرام",
+        "tumblr": "نعرفكم",
+        "snapchat": "سناب شات",
+        "youtube": "موقع YouTube",
+        "vimeo": "فيميو",
+        "tiktok": "تيك توك"
+      }
+    },
+    "continue_shopping": "مواصلة التسوق",
+    "pagination": {
+      "label": "ترقيم الصفحات",
+      "page": "{{ number }}",
+      "next": "الصفحة التالية",
+      "previous": "الصفحة السابقة"
+    },
+    "search": {
+      "search": "يبحث",
+      "reset": "مسح مصطلح البحث"
+    },
+    "cart": {
+      "view": "عرض سلة التسوق ( {{ count }} )",
+      "view_empty_cart": "عرض العربة",
+      "item_added": "إضافة السلعة الى سلة التسوق الخاصة بك"
+    },
+    "share": {
+      "close": "إغلاق المشاركة",
+      "copy_to_clipboard": "نسخ الوصلة",
+      "share_url": "وصلة",
+      "success_message": "تم نسخ الرابط إلى الحافظة"
+    },
+    "slider": {
+      "of": "ل",
+      "next_slide": "حرك لليمين",
+      "previous_slide": "مرر لليسار",
+      "name": "المنزلق"
+    }
+  },
+  "newsletter": {
+    "label": "بريد إلكتروني",
+    "success": "شكرا على الإشتراك",
+    "button_label": "يشترك"
+  },
+  "accessibility": {
+    "skip_to_text": "تخطى الى المحتوى",
+    "skip_to_product_info": "انتقل إلى معلومات المنتج",
+    "close": "يغلق",
+    "unit_price_separator": "لكل",
+    "vendor": "بائع:",
+    "error": "خطأ",
+    "refresh_page": "يؤدي اختيار تحديد إلى تحديث كامل للصفحة.",
+    "link_messages": {
+      "new_window": "يفتح في نافذة جديدة.",
+      "external": "يفتح موقع خارجي."
+    },
+    "loading": "تحميل...",
+    "total_reviews": "إجمالي المراجعات",
+    "star_reviews_info": "{{ rating_value }} من أصل {{ rating_max }} نجمة",
+    "collapsible_content_title": "محتوى قابل للطي",
+    "complementary_products": "المنتجات التكميلية"
+  },
+  "blogs": {
+    "article": {
+      "blog": "مدونة",
+      "read_more_title": "اقرأ المزيد: {{ title }}",
+      "comments": {
+        "one": "تعليق {{ count }}",
+        "other": "{{ count }} تعليق"
+      },
+      "moderated": "يرجى ملاحظة أنه يجب الموافقة على التعليقات قبل نشرها.",
+      "comment_form_title": "اترك تعليقا",
+      "name": "اسم",
+      "email": "بريد إلكتروني",
+      "message": "تعليق",
+      "post": "أضف تعليقا",
+      "back_to_blog": "العودة إلى بلوق",
+      "share": "حصة هذه المادة",
+      "success": "تم نشر تعليقك بنجاح! شكرًا لك!",
+      "success_moderated": "تم نشر تعليقك بنجاح. سنقوم بنشره بعد قليل، حيث أن مدونتنا خاضعة للإشراف."
+    }
+  },
+  "onboarding": {
+    "product_title": "مثال عنوان المنتج",
+    "collection_title": "اسم مجموعتك"
   }
 }
