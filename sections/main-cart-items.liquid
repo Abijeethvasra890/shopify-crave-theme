@@ -130,8 +130,8 @@
                               -->
                               <!-- {% for discount in item.discounts %} -->
                               <li>
-                                <strong>{{ item.discounts.title }}:</strong>
-                                {% if item.discounts.amount %}
+                                <strong>{{ item.title }}:</strong>
+                                {% if item.amount %}
                                   -{{ item.discounts.amount | money }}
                                 {% endif %}
                               </li>
