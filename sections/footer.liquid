@@ -315,6 +315,29 @@
         {%- endif -%}
       </div>
     </div>
+    <!-- Country Selector in Footer -->
+    <div class="footer-country-selector">
+      <label for="country-select-footer">Select your country/region:</label>
+      <select id="country-select-footer" onchange="changeCountry(this)">
+        {% for country in shop.markets %}
+          <option
+            value="{{ country.url }}"
+            {% if country.active %}
+              selected
+            {% endif %}
+          >
+            {{ country.name }}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <script>
+      function changeCountry(select) {
+        var url = select.value;
+        window.location.href = url;
+      }
+    </script>
   </div>
 </footer>
 
