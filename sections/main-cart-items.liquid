@@ -118,29 +118,19 @@
                           <strong class="cart-item__final-price product-option">
                             {{ item.final_price | money }}
                           </strong>
-                          <div class="cart-discounts">
-                            <h2>Discounts Applied</h2>
-                            <ul>
-                              {% assign discount_found = false %}
-                              {% for item in cart.items %}
-                                {% if item.discounts.size > 0 %}
-                                  {% assign discount_found = true %}
-                                  {% for discount in item.discounts %}
-                                    <li>
-                                      <strong>{{ discount.title }}:</strong>
-                                      {% if discount.amount %}
-                                        -{{ discount.amount | money }}
-                                      {% endif %}
-                                    </li>
-                                  {% endfor %}
-                                {% endif %}
-                              {% endfor %}
-
-                              {% unless discount_found %}
-                                <li>No discounts applied.</li>
-                              {% endunless %}
-                            </ul>
-                          </div>
+                          {% if item.discounts.size > 0 %}
+                            <div class="item-discounts">
+                              <h3>Discounts Applied:</h3>
+                              <ul>
+                                {% for discount in item.discounts %}
+                                  <li>
+                                    <strong>{{ discount.title }}:</strong>
+                                    -{{ discount.amount | money }}
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          {% endif %}
                         </div>
                       {%- else -%}
                         <div class="product-option">
