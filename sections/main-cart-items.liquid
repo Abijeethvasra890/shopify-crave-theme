@@ -122,20 +122,22 @@
                             <h2>Discounts Applied</h2>
                             <ul>
                               {% assign discount_found = false %}
-                              {% for item in cart.items %}
-                                <strong>{{ item.title }}:</strong>
+                              <!-- {% for item in cart.items %} -->
+                              <strong>{{ item.title }}:</strong>
+                              <!--
                                 {% if item.discounts.size > 0 %}
-                                  {% assign discount_found = true %}
-                                  {% for discount in item.discounts %}
-                                    <li>
-                                      <strong>{{ discount.title }}:</strong>
-                                      {% if discount.amount %}
-                                        -{{ discount.amount | money }}
-                                      {% endif %}
-                                    </li>
-                                  {% endfor %}
-                                {% endif %}
+                                {% assign discount_found = true %}
+                              -->
+                              {% for discount in item.discounts %}
+                                <li>
+                                  <strong>{{ discount.title }}:</strong>
+                                  {% if discount.amount %}
+                                    -{{ discount.amount | money }}
+                                  {% endif %}
+                                </li>
                               {% endfor %}
+                              <!-- {% endif %} -->
+                              <!-- {% endfor %} -->
 
                               {% unless discount_found %}
                                 <li>No discounts applied.</li>
