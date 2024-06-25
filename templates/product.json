@@ -290,11 +290,19 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "product-text": {
+      "type": "custom-text-product"
+    },
+    "custom-product-section": {
+      "type": "custom-product-section"
+
     }
   },
   "order": [
     "main",
     "product-text",
+    "custom-product-section",
     "multirow_Xqm3Jy",
     "related-products",
     "featured_collection_3MMaKp",
