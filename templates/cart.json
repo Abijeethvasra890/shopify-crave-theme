@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "cart-items": {
@@ -11,6 +20,7 @@
     "delivery-date-picker": {
       "type": "delivery-date-picker",
       "settings": {
+        "date": ""
       }
     },
     "cart-footer": {
@@ -36,11 +46,50 @@
         "padding_top": 20,
         "padding_bottom": 40
       }
+    },
+    "image_with_text_qtyxiT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_x9pWAm": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h2"
+          }
+        },
+        "text_3Per9R": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Wonderful customer support which helped me to decide on which model to select. Great Support. Keep it up!\"<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_x9pWAm",
+        "text_3Per9R"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/abiheroimage.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "cart-items",
     "delivery-date-picker",
-    "cart-footer"
+    "cart-footer",
+    "image_with_text_qtyxiT"
   ]
 }
