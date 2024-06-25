@@ -1,0 +1,136 @@
+{{ 'custom-product-section.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Custom Product Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "default_text",
+      "label": "Default Text",
+      "default": "This is the default text."
+    },
+    {
+      "type": "url",
+      "id": "default_video",
+      "label": "Default Video URL",
+    }
+  ]
+}
+{% endschema %}
+
+{% assign product_type = product.type  %}
+
+<div class="custom-product-section">
+    <h2 class='title'>Addition Info about {{product_type}}</h2>
+  {% if product_type == 'Mobile Phone' %}
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="column text">
+        <h3>How's Mobile Phone Changing you</h3>
+        <p>The video on the right explains about how are these powerful mobile phones
+            are changing our lives</p>
+      </div>
+      <div class="column video">
+        <iframe src="https://www.youtube.com/embed/W6CBb3yX9Zs" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row reverse">
+      <div class="column video">
+        <iframe src="https://www.youtube.com/embed/xnobktms0TM" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="column text">
+        <h3>Evolution of mobile Phones</h3>
+        <p>Mobile phones have evolved dramatically since their inception. 
+        The first mobile phone, Motorola's DynaTAC 8000X (1983), The 1990s saw the advent of smaller,
+         more affordable phones like Nokia's 3310, which became iconic for its durability. 
+        In 2007, Apple's iPhone revolutionized the industry with 
+         its touchscreen interface and app ecosystem. Today, mobile phones are powerful, 
+         multi-functional devices essential for communication, entertainment, 
+         and productivity, constantly pushing technological boundaries with 
+         advancements like 5G and AI integration.</p>
+      </div>
+    </div>
+
+  {% elsif product_type == 'TV' %}
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="column text">
+        <h3>Advantages of using TV</h3>
+        <p>The video on the right explains the various Advantages of
+            using Television in our day-to-day lives.</p>
+      </div>
+      <div class="column video">
+        <iframe src="https://www.youtube.com/embed/7vu3Ylov-DY" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row reverse">
+      <div class="column video">
+        <iframe src="https://www.youtube.com/embed/TszSjE_kQwg" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="column text">
+        <h3>Evolution of TV's</h3>
+        <p>Television has evolved from bulky, black-and-white cathode ray tube (CRT) 
+        sets in the 1930s to slim, high-definition (HD) and 4K ultra-high-definition 
+        (UHD) LED and OLED screens. Advances include color TV, remote controls, 
+        cable/satellite, and smart TVs with internet connectivity, transforming viewing 
+        into an interactive and immersive experience.</p>
+      </div>
+    </div>
+
+  {% elsif product_type == 'Watch' %}
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="column text">
+        <h3>Advantages of Smart Watches</h3>
+        <p>The video on the right explains the various advantages of usinf smartwatches
+            in our day-to-day lives.</p>
+      </div>
+      <div class="column video">
+        <iframe src="https://www.youtube.com/embed/dQaS-UqCnv0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row reverse">
+      <div class="column video">
+        <iframe src="https://www.youtube.com/embed/9-zNFtShNpw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="column text">
+        <h3>Evolution of Smart Watches</h3>
+        <p>Smartwatches evolved from basic digital watches in the 1970s to 
+           multifunctional devices in the 2010s. Early models focused on 
+           fitness tracking, but advances led to integration with smartphones, 
+           enabling notifications, GPS, and health monitoring. Modern smartwatches 
+           feature sophisticated sensors, apps, and connectivity, merging fashion
+           with advanced technology for everyday convenience.</p>
+      </div>
+    </div>
+
+  {% else %}
+    <!-- Default Content -->
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="column text">
+        <p>{{ section.settings.default_text }}</p>
+      </div>
+      <div class="column video">
+        <iframe src="{{ section.settings.default_video }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row reverse">
+      <div class="column video">
+        <iframe src="{{ section.settings.default_video }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="column text">
+        <p>{{ section.settings.default_text }}</p>
+      </div>
+    </div>
+  {% endif %}
+</div>

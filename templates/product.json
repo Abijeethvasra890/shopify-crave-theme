@@ -188,11 +188,15 @@
     },
     "product-text": {
       "type": "custom-text-product"
+    },
+    "custom-product-section": {
+      "type": "custom-product-section"
     }
   },
   "order": [
     "main",
     "product-text",
+    "custom-product-section",
     "related-products",
     "featured_collection_3MMaKp",
     "17182656415f06cbd8",
