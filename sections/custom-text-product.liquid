@@ -13,6 +13,20 @@
 }
 {% endschema %}
 
+{% assign product_type = product.type | downcase %}
+
 <div class="custom-text-product">
-  <h2>This text is from Custom Section via Local Code and from Another Branch</h2>
+  {% if product_type == 'Mobile Phone' %}
+    <h2>This is a Mobile Phone</h2>
+    {{ section.settings.rich_text_product }}
+  {% elsif product_type == 'TV' %}
+    <h2>This is a TV</h2>
+    {{ section.settings.rich_text_product }}
+  {% elsif product_type == 'Watch' %}
+    <h2>This is an Watch</h2>
+    {{ section.settings.rich_text_product }}
+  {% else %}
+    <h2>This is a General Product</h2>
+    {{ section.settings.rich_text_product }}
+  {% endif %}
 </div>
