@@ -118,6 +118,19 @@
                           <strong class="cart-item__final-price product-option">
                             {{ item.final_price | money }}
                           </strong>
+                          {% if item.discounts.size > 0 %}
+                            <div class="item-discounts">
+                              <h3>Discounts Applied:</h3>
+                              <ul>
+                                {% for discount in item.discounts %}
+                                  <li>
+                                    <strong>{{ discount.title }}:</strong>
+                                    -{{ discount.amount | money }}
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          {% endif %}
                         </div>
                       {%- else -%}
                         <div class="product-option">

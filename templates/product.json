@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -73,11 +82,6 @@
           "type": "description",
           "settings": {
           }
-        },
-        "judge_me_reviews_preview_badge_rB94qi": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -89,8 +93,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "judge_me_reviews_preview_badge_rB94qi"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -108,8 +111,59 @@
         "padding_bottom": 16
       }
     },
+    "product-text": {
+      "type": "custom-text-product",
+      "settings": {
+        "rich_text_product": ""
+      }
+    },
+    "multirow_Xqm3Jy": {
+      "type": "multirow",
+      "blocks": {
+        "row_i7Hbey": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_3nnzfw": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_i7Hbey",
+        "row_3nnzfw"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -172,18 +226,69 @@
     },
     "17186896047ed17792": {
       "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collapsible_content_FkPr8g": {
+      "type": "collapsible-content",
       "blocks": {
-        "judge_me_reviews_review_widget_efi4pw": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "collapsible_row_6G9iFL": {
+          "type": "collapsible_row",
           "settings": {
+            "heading": "Reliability",
+            "icon": "lock",
+            "row_content": "<p>We are in the field for more than 10 years so the product will be of high quality<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DFiUhU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Availability",
+            "icon": "stopwatch",
+            "row_content": "<p>We are available in stores from 9AM to 9PM (All 7 days). We are also available 24\/7 in Customer Support<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dYGdbq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Contact",
+            "icon": "chat_bubble",
+            "row_content": "<p>Phone - 9876543210<br\/>Customer support - 0452 123456<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fxkWMK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Location",
+            "icon": "map_pin",
+            "row_content": "<p>Anna Nagar Madurai - 625020<\/p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_efi4pw"
+        "collapsible_row_6G9iFL",
+        "collapsible_row_DFiUhU",
+        "collapsible_row_dYGdbq",
+        "collapsible_row_fxkWMK"
       ],
       "settings": {
-        "include_margins": true
+        "caption": "",
+        "heading": "About Vasra Store",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-3",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "product-text": {
@@ -191,15 +296,18 @@
     },
     "custom-product-section": {
       "type": "custom-product-section"
+
     }
   },
   "order": [
     "main",
     "product-text",
     "custom-product-section",
+    "multirow_Xqm3Jy",
     "related-products",
     "featured_collection_3MMaKp",
     "17182656415f06cbd8",
-    "17186896047ed17792"
+    "17186896047ed17792",
+    "collapsible_content_FkPr8g"
   ]
 }
