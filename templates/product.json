@@ -117,48 +117,11 @@
         "rich_text_product": ""
       }
     },
-    "multirow_Xqm3Jy": {
-      "type": "multirow",
-      "blocks": {
-        "row_i7Hbey": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_3nnzfw": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_i7Hbey",
-        "row_3nnzfw"
-      ],
+    "custom-product-section": {
+      "type": "custom-product-section",
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "default_text": "This is the default text.",
+        "default_video": ""
       }
     },
     "related-products": {
@@ -230,6 +193,16 @@
         "include_margins": true
       }
     },
+    "quick_order_list_zPtd4B": {
+      "type": "quick-order-list",
+      "settings": {
+        "show_image": true,
+        "show_sku": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collapsible_content_FkPr8g": {
       "type": "collapsible-content",
       "blocks": {
@@ -290,24 +263,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "product-text": {
-      "type": "custom-text-product"
-    },
-    "custom-product-section": {
-      "type": "custom-product-section"
-
     }
   },
   "order": [
     "main",
     "product-text",
     "custom-product-section",
-    "multirow_Xqm3Jy",
     "related-products",
     "featured_collection_3MMaKp",
     "17182656415f06cbd8",
     "17186896047ed17792",
+    "quick_order_list_zPtd4B",
     "collapsible_content_FkPr8g"
   ]
 }
