@@ -2,6 +2,72 @@
 
 {% schema %}
 {
+  "name": "Custom Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "default_text",
+      "label": "Default Text",
+      "default": "This is the default text."
+    },
+    {
+      "type": "url",
+      "id": "default_video",
+      "label": "Default Video URL",
+    }
+  ]
+}
+{% endschema %}
+
+
+{% comment %} <p>{{ product.metafields.custom }}</p> {% endcomment %}
+
+<div class="custom-collection-metafields">
+  {% if product and product.metafields.custom.row1_text and product.metafields.custom.row1_video %}
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="column text">
+        <p>{{ product.metafields.custom.row1_text }}</p>
+      </div>
+      <div class="column video">
+        <iframe src="{{ product.metafields.custom.row1_video }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row reverse">
+      <div class="column video">
+        <iframe src="{{ product.metafields.custom.row2_video }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="column text">
+        <p>{{ product.metafields.custom.row2_text }}</p>
+      </div>
+    </div>
+  {% else %}
+    <!-- Default Content -->
+    <div class="row">
+      <div class="column text">
+        <p>{{ section.settings.default_text }}</p>
+      </div>
+      <div class="column video">
+        <iframe src="{{ section.settings.default_video }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row reverse">
+      <div class="column video">
+        <iframe src="{{ section.settings.default_video }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="column text">
+        <p>{{ section.settings.default_text }}</p>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+
+{% comment %} {% schema %}
+{
   "name": "Custom Product Section",
   "settings": [
     {
@@ -133,4 +199,4 @@
       </div>
     </div>
   {% endif %}
-</div>
+</div> {% endcomment %}
