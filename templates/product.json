@@ -82,6 +82,13 @@
           "type": "description",
           "settings": {
           }
+        },
+        "second_app_star_rating_NL7EUU": {
+          "type": "shopify:\/\/apps\/second-app\/blocks\/star_rating\/72ba19d1-10b2-4e60-ab63-2347508180fa",
+          "settings": {
+            "product": "{{product}}",
+            "colour": "#ff0000"
+          }
         }
       },
       "block_order": [
@@ -93,7 +100,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description"
+        "description",
+        "second_app_star_rating_NL7EUU"
       ],
       "settings": {
         "enable_sticky_info": true,
